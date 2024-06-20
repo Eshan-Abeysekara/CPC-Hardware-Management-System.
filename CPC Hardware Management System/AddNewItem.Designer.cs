@@ -31,11 +31,7 @@
             panel1 = new Panel();
             button7 = new Button();
             button6 = new Button();
-            txtitemmodel = new TextBox();
-            txtitembrand = new TextBox();
             txtitemname = new TextBox();
-            itemmodel = new Label();
-            itembrand = new Label();
             itemname = new Label();
             label1 = new Label();
             button5 = new Button();
@@ -52,11 +48,7 @@
             // 
             panel1.Controls.Add(button7);
             panel1.Controls.Add(button6);
-            panel1.Controls.Add(txtitemmodel);
-            panel1.Controls.Add(txtitembrand);
             panel1.Controls.Add(txtitemname);
-            panel1.Controls.Add(itemmodel);
-            panel1.Controls.Add(itembrand);
             panel1.Controls.Add(itemname);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(button5);
@@ -87,52 +79,18 @@
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
             // 
-            // txtitemmodel
-            // 
-            txtitemmodel.Location = new Point(526, 296);
-            txtitemmodel.Name = "txtitemmodel";
-            txtitemmodel.Size = new Size(290, 23);
-            txtitemmodel.TabIndex = 8;
-            // 
-            // txtitembrand
-            // 
-            txtitembrand.Location = new Point(526, 229);
-            txtitembrand.Name = "txtitembrand";
-            txtitembrand.Size = new Size(290, 23);
-            txtitembrand.TabIndex = 7;
-            // 
             // txtitemname
             // 
-            txtitemname.Location = new Point(526, 166);
+            txtitemname.Location = new Point(526, 226);
             txtitemname.Name = "txtitemname";
             txtitemname.Size = new Size(290, 23);
             txtitemname.TabIndex = 6;
-            // 
-            // itemmodel
-            // 
-            itemmodel.AutoSize = true;
-            itemmodel.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            itemmodel.Location = new Point(363, 295);
-            itemmodel.Name = "itemmodel";
-            itemmodel.Size = new Size(108, 25);
-            itemmodel.TabIndex = 5;
-            itemmodel.Text = "Item Model";
-            // 
-            // itembrand
-            // 
-            itembrand.AutoSize = true;
-            itembrand.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            itembrand.Location = new Point(363, 229);
-            itembrand.Name = "itembrand";
-            itembrand.Size = new Size(104, 25);
-            itembrand.TabIndex = 4;
-            itembrand.Text = "Item Brand";
             // 
             // itemname
             // 
             itemname.AutoSize = true;
             itemname.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            itemname.Location = new Point(363, 164);
+            itemname.Location = new Point(363, 224);
             itemname.Name = "itemname";
             itemname.Size = new Size(104, 25);
             itemname.TabIndex = 3;
@@ -237,11 +195,7 @@
         private Button button1;
         private Label label1;
         private Label itemname;
-        private TextBox txtitemmodel;
-        private TextBox txtitembrand;
         private TextBox txtitemname;
-        private Label itemmodel;
-        private Label itembrand;
         private Button button7;
         private Button button6;
     }

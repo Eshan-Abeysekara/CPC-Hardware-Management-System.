@@ -73,8 +73,8 @@ namespace CPC_Hardware_Management_System
         public void Clear()
         {
             txtitemname.Clear();
-            txtitemmodel.Clear();
-            txtitembrand.Clear();
+            //txtitemmodel.Clear();
+            //txtitembrand.Clear();
         }
 
         
@@ -84,11 +84,11 @@ namespace CPC_Hardware_Management_System
             SqlConnection con = new SqlConnection(ConnectionString);
 
             string name = txtitemname.Text;
-            string brand = txtitembrand.Text;
-            string model = txtitemmodel.Text;
+            //string brand = txtitembrand.Text;
+            //string model = txtitemmodel.Text;
 
             con.Open();
-            string Query = "insert into Item values ('"+name+"','"+brand+"','"+model+"')";
+            string Query = "insert into Item values ('"+name+"')";
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
             con.Close();

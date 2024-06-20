@@ -124,6 +124,8 @@ namespace CPC_Hardware_Management_System
             DataBlind2();
             DataBlind3();
             DataBlind4();
+            DataBlind5();
+            DataBlind6();
             Clear();    
         }
 
@@ -132,14 +134,14 @@ namespace CPC_Hardware_Management_System
         {
             SqlConnection con = new SqlConnection(ConnectionString);
             con.Open();
-            SqlCommand cmd = new SqlCommand("select Item_Name,Item_Brand,Itrm_Model from Item", con);
+            SqlCommand cmd = new SqlCommand("select Item_Name from Item", con);
             SqlDataReader datareader = cmd.ExecuteReader();
             cmbitem.Items.Clear();
             while (datareader.Read())
             {
                 cmbitem.Items.Add(datareader["Item_Name"].ToString());
-                cmbbrand.Items.Add(datareader["Item_Brand"].ToString());
-                cmbmodel.Items.Add(datareader["Itrm_Model"].ToString());
+                //cmbbrand.Items.Add(datareader["Item_Brand"].ToString());
+                //cmbmodel.Items.Add(datareader["Itrm_Model"].ToString());
             }
             con.Close();
         }
@@ -187,6 +189,35 @@ namespace CPC_Hardware_Management_System
             }
             con.Close();
         }
-
+        public void DataBlind5()
+        {
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select Item_Model from Item_Model", con);
+            SqlDataReader datareader = cmd.ExecuteReader();
+            cmbmodel.Items.Clear();
+            while (datareader.Read())
+            {
+                //cmbitem.Items.Add(datareader["Item_Name"].ToString());
+                cmbmodel.Items.Add(datareader["Item_Model"].ToString());
+                //cmbmodel.Items.Add(datareader["Itrm_Model"].ToString());
+            }
+            con.Close();
+        }
+        public void DataBlind6()
+        {
+            SqlConnection con = new SqlConnection(ConnectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select Item_Brand from Item_Brand", con);
+            SqlDataReader datareader = cmd.ExecuteReader();
+            cmbbrand.Items.Clear();
+            while (datareader.Read())
+            {
+                //cmbitem.Items.Add(datareader["Item_Name"].ToString());
+                cmbbrand.Items.Add(datareader["Item_Brand"].ToString());
+                //cmbmodel.Items.Add(datareader["Itrm_Model"].ToString());
+            }
+            con.Close();
+        }
     }
 }

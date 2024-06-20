@@ -39,6 +39,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(121, 37);
@@ -49,6 +50,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.Location = new Point(232, 237);
@@ -59,6 +61,7 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.Location = new Point(232, 331);
@@ -69,13 +72,16 @@
             // 
             // txtusername
             // 
+            txtusername.Anchor = AnchorStyles.None;
             txtusername.Location = new Point(424, 247);
             txtusername.Name = "txtusername";
             txtusername.Size = new Size(302, 23);
             txtusername.TabIndex = 3;
+            txtusername.TextChanged += txtusername_TextChanged;
             // 
             // txtpassword
             // 
+            txtpassword.Anchor = AnchorStyles.None;
             txtpassword.Location = new Point(424, 340);
             txtpassword.Name = "txtpassword";
             txtpassword.PasswordChar = '*';
@@ -84,6 +90,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.None;
             button1.Location = new Point(510, 430);
             button1.Name = "button1";
             button1.Size = new Size(87, 34);
@@ -94,6 +101,7 @@
             // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.None;
             button2.Location = new Point(639, 430);
             button2.Name = "button2";
             button2.Size = new Size(87, 34);
@@ -117,6 +125,8 @@
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
+            WindowState = FormWindowState.Maximized;
+            Load += Login_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -37,17 +37,17 @@ namespace CPC_Hardware_Management_System
             Admin admin = new Admin();
             User user = new User();
 
-            if(username =="Admin" && password=="Admin123")
+            if (username == "Admin" && password == "Admin123")
             {
                 admin.Show();
                 this.Hide();
             }
-            else if (username =="User" && password=="User123")
+            else if (username == "User" && password == "User123")
             {
                 user.Show();
                 this.Hide();
             }
-            else if(username =="" && password=="")
+            else if (username == "" && password == "")
             {
                 MessageBox.Show("Enter User Name and Password");
             }
@@ -56,6 +56,16 @@ namespace CPC_Hardware_Management_System
                 MessageBox.Show("Username or Password incorrect");
                 Clear();
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtusername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

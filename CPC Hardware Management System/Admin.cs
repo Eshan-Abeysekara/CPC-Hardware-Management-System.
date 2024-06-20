@@ -16,7 +16,7 @@ namespace CPC_Hardware_Management_System
         {
             InitializeComponent();
         }
-        
+
         private void button5_Click(object sender, EventArgs e)
         {
             Login login = new Login();
@@ -49,6 +49,20 @@ namespace CPC_Hardware_Management_System
         {
             AddNewTechnicians addnewtechnicians = new AddNewTechnicians();
             addnewtechnicians.Show();
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            AddNewItemBrand addnewitembrand = new AddNewItemBrand();
+            addnewitembrand.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AddNewItemModel addnewitemmodel = new AddNewItemModel();
+            addnewitemmodel.Show();
             this.Hide();
         }
     }

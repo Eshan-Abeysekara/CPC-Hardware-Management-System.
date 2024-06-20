@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            button5 = new Button();
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
-            button5 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.None;
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
@@ -50,8 +51,21 @@
             panel1.TabIndex = 1;
             panel1.Paint += panel1_Paint;
             // 
+            // button5
+            // 
+            button5.Anchor = AnchorStyles.None;
+            button5.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.Location = new Point(754, 486);
+            button5.Name = "button5";
+            button5.Size = new Size(68, 30);
+            button5.TabIndex = 4;
+            button5.Text = "Back";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // button4
             // 
+            button4.Anchor = AnchorStyles.None;
             button4.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button4.Location = new Point(599, 323);
             button4.Name = "button4";
@@ -63,6 +77,7 @@
             // 
             // button3
             // 
+            button3.Anchor = AnchorStyles.None;
             button3.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.Location = new Point(130, 323);
             button3.Name = "button3";
@@ -74,6 +89,7 @@
             // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.None;
             button2.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.Location = new Point(599, 97);
             button2.Name = "button2";
@@ -85,6 +101,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.None;
             button1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.Location = new Point(130, 97);
             button1.Name = "button1";
@@ -93,17 +110,6 @@
             button1.Text = "New Record";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
-            // 
-            // button5
-            // 
-            button5.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.Location = new Point(754, 486);
-            button5.Name = "button5";
-            button5.Size = new Size(68, 30);
-            button5.TabIndex = 4;
-            button5.Text = "Back";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
             // 
             // User
             // 
