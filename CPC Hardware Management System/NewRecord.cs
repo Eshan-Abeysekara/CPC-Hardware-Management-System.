@@ -140,8 +140,7 @@ namespace CPC_Hardware_Management_System
             while (datareader.Read())
             {
                 cmbitem.Items.Add(datareader["Item_Name"].ToString());
-                //cmbbrand.Items.Add(datareader["Item_Brand"].ToString());
-                //cmbmodel.Items.Add(datareader["Itrm_Model"].ToString());
+                
             }
             con.Close();
         }
@@ -198,9 +197,9 @@ namespace CPC_Hardware_Management_System
             cmbmodel.Items.Clear();
             while (datareader.Read())
             {
-                //cmbitem.Items.Add(datareader["Item_Name"].ToString());
+                
                 cmbmodel.Items.Add(datareader["Item_Model"].ToString());
-                //cmbmodel.Items.Add(datareader["Itrm_Model"].ToString());
+               
             }
             con.Close();
         }
@@ -213,9 +212,9 @@ namespace CPC_Hardware_Management_System
             cmbbrand.Items.Clear();
             while (datareader.Read())
             {
-                //cmbitem.Items.Add(datareader["Item_Name"].ToString());
+                
                 cmbbrand.Items.Add(datareader["Item_Brand"].ToString());
-                //cmbmodel.Items.Add(datareader["Itrm_Model"].ToString());
+                
             }
             con.Close();
         }

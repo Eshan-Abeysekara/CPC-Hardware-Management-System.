@@ -41,6 +41,7 @@
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(121, 37);
             label1.Name = "label1";
@@ -114,6 +115,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Ceylon_Petroleum_Corporation_1;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 561);
             Controls.Add(button2);
             Controls.Add(button1);
