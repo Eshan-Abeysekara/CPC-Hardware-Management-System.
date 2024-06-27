@@ -43,5 +43,39 @@ namespace CPC_Hardware_Management_System
             //txtitemmodel.Clear();
             //txtitembrand.Clear();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddNewItem addnewitem = new AddNewItem();
+            addnewitem.Show();
+            this.Close();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddNewError addnewerror = new AddNewError();
+            addnewerror.Show();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AddNewResolvingStatus addnewresolving = new AddNewResolvingStatus();
+            addnewresolving.Show();
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AddNewTechnicians addnewtechnician = new AddNewTechnicians();
+            addnewtechnician.Show();
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }

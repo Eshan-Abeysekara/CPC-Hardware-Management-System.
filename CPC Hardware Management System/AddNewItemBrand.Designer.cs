@@ -72,6 +72,7 @@
             button7.TabIndex = 10;
             button7.Text = "Clear";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button6
             // 
@@ -105,6 +106,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(476, 52);
             label1.Name = "label1";
@@ -122,6 +124,7 @@
             button5.TabIndex = 1;
             button5.Text = "Close";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // panel2
             // 
@@ -156,6 +159,7 @@
             button8.TabIndex = 4;
             button8.Text = "Add New Item Model\r\n";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button4
             // 
@@ -165,6 +169,7 @@
             button4.TabIndex = 3;
             button4.Text = "Add New Technicians";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -174,6 +179,7 @@
             button3.TabIndex = 2;
             button3.Text = "Add New Resolving Status";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -183,6 +189,7 @@
             button2.TabIndex = 1;
             button2.Text = "Add New Error";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -193,6 +200,7 @@
             button1.TabIndex = 0;
             button1.Text = "Add New Item";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // AddNewItemBrand
             // 
