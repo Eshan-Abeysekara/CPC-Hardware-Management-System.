@@ -65,5 +65,10 @@ namespace CPC_Hardware_Management_System
             addnewitemmodel.Show();
             this.Hide();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

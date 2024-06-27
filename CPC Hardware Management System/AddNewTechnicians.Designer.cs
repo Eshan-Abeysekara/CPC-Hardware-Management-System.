@@ -49,6 +49,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.Transparent;
             panel1.Controls.Add(button7);
             panel1.Controls.Add(button6);
             panel1.Controls.Add(txttechnicianname);
@@ -66,6 +67,7 @@
             // 
             // button7
             // 
+            button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button7.Location = new Point(740, 399);
             button7.Name = "button7";
             button7.Size = new Size(81, 34);
@@ -76,6 +78,7 @@
             // 
             // button6
             // 
+            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button6.Location = new Point(613, 399);
             button6.Name = "button6";
             button6.Size = new Size(83, 34);
@@ -101,20 +104,22 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.BackColor = Color.White;
+            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label3.Location = new Point(359, 266);
             label3.Name = "label3";
-            label3.Size = new Size(156, 25);
+            label3.Size = new Size(161, 25);
             label3.TabIndex = 4;
             label3.Text = "Technician Name";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.BackColor = Color.White;
+            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             label2.Location = new Point(359, 184);
             label2.Name = "label2";
-            label2.Size = new Size(78, 25);
+            label2.Size = new Size(82, 25);
             label2.TabIndex = 3;
             label2.Text = "EMF No";
             // 
@@ -130,6 +135,7 @@
             // 
             // button5
             // 
+            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button5.Location = new Point(882, 3);
             button5.Name = "button5";
             button5.Size = new Size(75, 23);
@@ -140,6 +146,7 @@
             // 
             // panel2
             // 
+            panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(button4);
             panel2.Controls.Add(button3);
             panel2.Controls.Add(button2);
@@ -194,6 +201,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Ceylon_Petroleum_Corporation_1;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 561);
             Controls.Add(panel1);
             Name = "AddNewTechnicians";

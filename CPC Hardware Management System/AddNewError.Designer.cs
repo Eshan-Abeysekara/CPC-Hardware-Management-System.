@@ -46,6 +46,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.Transparent;
             panel1.Controls.Add(button7);
             panel1.Controls.Add(button6);
             panel1.Controls.Add(txterror);
@@ -61,22 +62,26 @@
             // 
             // button7
             // 
+            button7.BackColor = Color.White;
+            button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button7.Location = new Point(735, 402);
             button7.Name = "button7";
             button7.Size = new Size(81, 34);
             button7.TabIndex = 10;
             button7.Text = "Clear";
-            button7.UseVisualStyleBackColor = true;
+            button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click;
             // 
             // button6
             // 
+            button6.BackColor = Color.White;
+            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button6.Location = new Point(608, 402);
             button6.Name = "button6";
             button6.Size = new Size(83, 34);
             button6.TabIndex = 9;
             button6.Text = "Add";
-            button6.UseVisualStyleBackColor = true;
+            button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
             // txterror
@@ -89,10 +94,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.BackColor = Color.White;
+            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(372, 229);
             label3.Name = "label3";
-            label3.Size = new Size(54, 25);
+            label3.Size = new Size(58, 25);
             label3.TabIndex = 4;
             label3.Text = "Error";
             // 
@@ -108,6 +114,7 @@
             // 
             // button5
             // 
+            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.Location = new Point(882, 3);
             button5.Name = "button5";
             button5.Size = new Size(75, 23);
@@ -118,6 +125,7 @@
             // 
             // panel2
             // 
+            panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(button4);
             panel2.Controls.Add(button3);
             panel2.Controls.Add(button2);
@@ -172,6 +180,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Ceylon_Petroleum_Corporation_1;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 561);
             Controls.Add(panel1);
             Name = "AddNewError";

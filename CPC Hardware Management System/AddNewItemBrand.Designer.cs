@@ -48,6 +48,8 @@
             // 
             // panel1
             // 
+            panel1.BackgroundImage = Properties.Resources.Ceylon_Petroleum_Corporation_1;
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(button7);
             panel1.Controls.Add(button6);
             panel1.Controls.Add(txtitembrand);
@@ -62,21 +64,25 @@
             // 
             // button7
             // 
+            button7.BackColor = Color.White;
+            button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button7.Location = new Point(735, 402);
             button7.Name = "button7";
             button7.Size = new Size(81, 34);
             button7.TabIndex = 10;
             button7.Text = "Clear";
-            button7.UseVisualStyleBackColor = true;
+            button7.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
+            button6.BackColor = Color.White;
+            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button6.Location = new Point(608, 402);
             button6.Name = "button6";
             button6.Size = new Size(83, 34);
             button6.TabIndex = 9;
             button6.Text = "Add";
-            button6.UseVisualStyleBackColor = true;
+            button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
             // txtitembrand
@@ -89,10 +95,10 @@
             // itemname
             // 
             itemname.AutoSize = true;
-            itemname.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            itemname.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             itemname.Location = new Point(363, 224);
             itemname.Name = "itemname";
-            itemname.Size = new Size(104, 25);
+            itemname.Size = new Size(111, 25);
             itemname.TabIndex = 3;
             itemname.Text = "Item Brand";
             // 
@@ -108,15 +114,18 @@
             // 
             // button5
             // 
+            button5.BackColor = Color.White;
+            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button5.Location = new Point(882, 3);
             button5.Name = "button5";
             button5.Size = new Size(75, 23);
             button5.TabIndex = 1;
             button5.Text = "Close";
-            button5.UseVisualStyleBackColor = true;
+            button5.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
+            panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(button9);
             panel2.Controls.Add(button8);
             panel2.Controls.Add(button4);

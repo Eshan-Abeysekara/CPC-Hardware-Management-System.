@@ -43,15 +43,18 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.Transparent;
             panel1.Controls.Add(button5);
             panel1.Controls.Add(panel2);
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(960, 537);
             panel1.TabIndex = 2;
+            panel1.Paint += panel1_Paint;
             // 
             // button5
             // 
+            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.Location = new Point(882, 3);
             button5.Name = "button5";
             button5.Size = new Size(75, 23);
@@ -62,6 +65,7 @@
             // 
             // panel2
             // 
+            panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(button7);
             panel2.Controls.Add(button6);
             panel2.Controls.Add(button4);
@@ -75,7 +79,8 @@
             // 
             // button7
             // 
-            button7.Font = new Font("Segoe UI", 9F);
+            button7.BackgroundImageLayout = ImageLayout.Center;
+            button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button7.Location = new Point(23, 102);
             button7.Name = "button7";
             button7.Size = new Size(204, 59);
@@ -86,7 +91,8 @@
             // 
             // button6
             // 
-            button6.Font = new Font("Segoe UI", 9F);
+            button6.BackgroundImageLayout = ImageLayout.Center;
+            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button6.Location = new Point(23, 193);
             button6.Name = "button6";
             button6.Size = new Size(204, 59);
@@ -97,6 +103,8 @@
             // 
             // button4
             // 
+            button4.BackgroundImageLayout = ImageLayout.Center;
+            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button4.Location = new Point(23, 457);
             button4.Name = "button4";
             button4.Size = new Size(204, 59);
@@ -107,6 +115,8 @@
             // 
             // button3
             // 
+            button3.BackgroundImageLayout = ImageLayout.Center;
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button3.Location = new Point(23, 369);
             button3.Name = "button3";
             button3.Size = new Size(204, 59);
@@ -117,6 +127,8 @@
             // 
             // button2
             // 
+            button2.BackgroundImageLayout = ImageLayout.Center;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button2.Location = new Point(23, 283);
             button2.Name = "button2";
             button2.Size = new Size(204, 59);
@@ -127,7 +139,8 @@
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI", 9F);
+            button1.BackgroundImageLayout = ImageLayout.Center;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button1.Location = new Point(23, 16);
             button1.Name = "button1";
             button1.Size = new Size(204, 59);
@@ -140,6 +153,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Ceylon_Petroleum_Corporation_1;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 561);
             Controls.Add(panel1);
             Name = "Admin";

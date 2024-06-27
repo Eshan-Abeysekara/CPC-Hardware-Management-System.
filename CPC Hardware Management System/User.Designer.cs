@@ -40,6 +40,7 @@
             // panel1
             // 
             panel1.Anchor = AnchorStyles.None;
+            panel1.BackColor = Color.Transparent;
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
@@ -54,7 +55,7 @@
             // button5
             // 
             button5.Anchor = AnchorStyles.None;
-            button5.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             button5.Location = new Point(754, 486);
             button5.Name = "button5";
             button5.Size = new Size(68, 30);
@@ -66,7 +67,7 @@
             // button4
             // 
             button4.Anchor = AnchorStyles.None;
-            button4.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             button4.Location = new Point(599, 323);
             button4.Name = "button4";
             button4.Size = new Size(223, 89);
@@ -78,7 +79,7 @@
             // button3
             // 
             button3.Anchor = AnchorStyles.None;
-            button3.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             button3.Location = new Point(130, 323);
             button3.Name = "button3";
             button3.Size = new Size(232, 89);
@@ -90,7 +91,7 @@
             // button2
             // 
             button2.Anchor = AnchorStyles.None;
-            button2.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             button2.Location = new Point(599, 97);
             button2.Name = "button2";
             button2.Size = new Size(223, 98);
@@ -102,7 +103,7 @@
             // button1
             // 
             button1.Anchor = AnchorStyles.None;
-            button1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             button1.Location = new Point(130, 97);
             button1.Name = "button1";
             button1.Size = new Size(232, 98);
@@ -115,6 +116,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Ceylon_Petroleum_Corporation_1;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 561);
             Controls.Add(panel1);
             Name = "User";

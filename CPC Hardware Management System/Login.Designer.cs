@@ -48,15 +48,18 @@
             label1.Size = new Size(764, 65);
             label1.TabIndex = 0;
             label1.Text = "Hardware Management Sysytem";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.Anchor = AnchorStyles.None;
+            label2.AutoEllipsis = true;
             label2.AutoSize = true;
+            label2.BorderStyle = BorderStyle.FixedSingle;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.Location = new Point(232, 237);
             label2.Name = "label2";
-            label2.Size = new Size(132, 32);
+            label2.Size = new Size(134, 34);
             label2.TabIndex = 1;
             label2.Text = "User Name";
             // 
@@ -64,10 +67,11 @@
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
+            label3.BorderStyle = BorderStyle.FixedSingle;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.Location = new Point(232, 331);
             label3.Name = "label3";
-            label3.Size = new Size(111, 32);
+            label3.Size = new Size(113, 34);
             label3.TabIndex = 2;
             label3.Text = "Password";
             // 

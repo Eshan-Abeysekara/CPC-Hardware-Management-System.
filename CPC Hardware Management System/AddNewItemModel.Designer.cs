@@ -47,6 +47,8 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.Transparent;
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(button7);
             panel1.Controls.Add(button6);
             panel1.Controls.Add(txtitemmodel);
@@ -61,6 +63,7 @@
             // 
             // button7
             // 
+            button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button7.Location = new Point(735, 402);
             button7.Name = "button7";
             button7.Size = new Size(81, 34);
@@ -70,6 +73,7 @@
             // 
             // button6
             // 
+            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button6.Location = new Point(608, 402);
             button6.Name = "button6";
             button6.Size = new Size(83, 34);
@@ -88,10 +92,11 @@
             // itemname
             // 
             itemname.AutoSize = true;
-            itemname.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            itemname.BackColor = Color.White;
+            itemname.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             itemname.Location = new Point(363, 224);
             itemname.Name = "itemname";
-            itemname.Size = new Size(108, 25);
+            itemname.Size = new Size(114, 25);
             itemname.TabIndex = 3;
             itemname.Text = "Item Model";
             // 
@@ -107,6 +112,7 @@
             // 
             // button5
             // 
+            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             button5.Location = new Point(882, 3);
             button5.Name = "button5";
             button5.Size = new Size(75, 23);
@@ -116,6 +122,8 @@
             // 
             // panel2
             // 
+            panel2.BackgroundImageLayout = ImageLayout.Center;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(button8);
             panel2.Controls.Add(button4);
             panel2.Controls.Add(button3);
@@ -177,6 +185,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Ceylon_Petroleum_Corporation_1;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(984, 561);
             Controls.Add(panel1);
             Name = "AddNewItemModel";
