@@ -66,16 +66,16 @@ namespace CPC_Hardware_Management_System
             this.Hide();
         }
 
-        
+
         //ADD ERROR
         private void button6_Click(object sender, EventArgs e)
         {
 
 
             SqlConnection con = new SqlConnection(ConnectionString);
-           
+
             string Error = txterror.Text;
-            
+
             con.Open();
             string Query = "insert into Error values ('" + Error + "')";
             SqlCommand cmd = new SqlCommand(Query, con);
@@ -89,7 +89,26 @@ namespace CPC_Hardware_Management_System
 
         private void AddNewError_Load(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AddNewItemBrand addnewitembrand = new AddNewItemBrand();
+            addnewitembrand.Show();
+            this.Hide();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            AddNewItemModel addnewitemmodel = new AddNewItemModel();
+            addnewitemmodel.Show();
+            this.Hide();
         }
     }
 }

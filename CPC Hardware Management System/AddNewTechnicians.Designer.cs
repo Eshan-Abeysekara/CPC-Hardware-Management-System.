@@ -39,6 +39,8 @@
             label1 = new Label();
             button5 = new Button();
             panel2 = new Panel();
+            button8 = new Button();
+            button11 = new Button();
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
@@ -147,6 +149,8 @@
             // panel2
             // 
             panel2.BackColor = Color.Transparent;
+            panel2.Controls.Add(button8);
+            panel2.Controls.Add(button11);
             panel2.Controls.Add(button4);
             panel2.Controls.Add(button3);
             panel2.Controls.Add(button2);
@@ -156,19 +160,42 @@
             panel2.Size = new Size(250, 531);
             panel2.TabIndex = 0;
             // 
+            // button8
+            // 
+            button8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button8.Location = new Point(23, 204);
+            button8.Name = "button8";
+            button8.Size = new Size(204, 59);
+            button8.TabIndex = 19;
+            button8.Text = "Add New Item Model\r\n";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // button11
+            // 
+            button11.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button11.Location = new Point(23, 109);
+            button11.Name = "button11";
+            button11.Size = new Size(204, 59);
+            button11.TabIndex = 18;
+            button11.Text = "Add New Item Brand\r\n";
+            button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
+            // 
             // button4
             // 
             button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(23, 369);
+            button4.Location = new Point(23, 454);
             button4.Name = "button4";
             button4.Size = new Size(204, 59);
             button4.TabIndex = 3;
             button4.Text = "Add New Technicians";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(23, 270);
+            button3.Location = new Point(23, 369);
             button3.Name = "button3";
             button3.Size = new Size(204, 59);
             button3.TabIndex = 2;
@@ -178,7 +205,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(23, 174);
+            button2.Location = new Point(23, 287);
             button2.Name = "button2";
             button2.Size = new Size(204, 59);
             button2.TabIndex = 1;
@@ -189,7 +216,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(23, 85);
+            button1.Location = new Point(23, 27);
             button1.Name = "button1";
             button1.Size = new Size(204, 59);
             button1.TabIndex = 0;
@@ -230,5 +257,7 @@
         private Button button3;
         private Button button2;
         private Button button1;
+        private Button button11;
+        private Button button8;
     }
 }

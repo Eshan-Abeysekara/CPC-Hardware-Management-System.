@@ -77,7 +77,7 @@ namespace CPC_Hardware_Management_System
             //txtitembrand.Clear();
         }
 
-        
+
         //ADD ITEM
         private void button6_Click(object sender, EventArgs e)
         {
@@ -88,7 +88,7 @@ namespace CPC_Hardware_Management_System
             //string model = txtitemmodel.Text;
 
             con.Open();
-            string Query = "insert into Item values ('"+name+"')";
+            string Query = "insert into Item values ('" + name + "')";
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -96,6 +96,46 @@ namespace CPC_Hardware_Management_System
             MessageBox.Show("Item Adding Success....");
 
             Clear();
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AddNewItemBrand addnewitembrand = new AddNewItemBrand();
+            addnewitembrand.Show();
+            this.Hide();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            AddNewItemModel addnewitemmodel = new AddNewItemModel();
+            addnewitemmodel.Show();
+            this.Hide();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            AddNewError addnewerror = new AddNewError();
+            addnewerror.Show();
+            this.Hide();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            AddNewResolvingStatus addnewresolving = new AddNewResolvingStatus();
+            addnewresolving.Show();
+            this.Hide();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            AddNewTechnicians addnewtechnicians = new AddNewTechnicians();
+            addnewtechnicians.Show();
+            this.Hide();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

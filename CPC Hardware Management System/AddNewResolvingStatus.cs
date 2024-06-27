@@ -73,7 +73,7 @@ namespace CPC_Hardware_Management_System
             string status = txtresolvingstatus.Text;
 
             con.Open();
-            string Query = "insert into Resolving_Status values ('"+status+"')";
+            string Query = "insert into Resolving_Status values ('" + status + "')";
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -81,6 +81,20 @@ namespace CPC_Hardware_Management_System
             MessageBox.Show("Resolving Status Adding Success....");
 
             Clear();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            AddNewItemBrand addnewitembrand = new AddNewItemBrand();
+            addnewitembrand.Show();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AddNewItemModel addnewitemmodel = new AddNewItemModel();
+            addnewitemmodel.Show();
+            this.Hide();
         }
     }
 }

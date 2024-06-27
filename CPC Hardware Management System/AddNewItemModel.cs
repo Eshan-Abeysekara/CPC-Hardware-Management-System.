@@ -77,5 +77,12 @@ namespace CPC_Hardware_Management_System
         {
             Clear();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            AddNewItemBrand addnewitembrand = new AddNewItemBrand();
+            addnewitembrand.Show();
+            this.Close();
+        }
     }
 }

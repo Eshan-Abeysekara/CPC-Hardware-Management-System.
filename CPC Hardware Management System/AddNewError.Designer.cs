@@ -36,6 +36,8 @@
             label1 = new Label();
             button5 = new Button();
             panel2 = new Panel();
+            button9 = new Button();
+            button8 = new Button();
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
@@ -126,6 +128,8 @@
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(button9);
+            panel2.Controls.Add(button8);
             panel2.Controls.Add(button4);
             panel2.Controls.Add(button3);
             panel2.Controls.Add(button2);
@@ -135,9 +139,31 @@
             panel2.Size = new Size(250, 531);
             panel2.TabIndex = 0;
             // 
+            // button9
+            // 
+            button9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button9.Location = new Point(22, 189);
+            button9.Name = "button9";
+            button9.Size = new Size(204, 59);
+            button9.TabIndex = 5;
+            button9.Text = "Add New Item Model ";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
+            // 
+            // button8
+            // 
+            button8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button8.Location = new Point(22, 104);
+            button8.Name = "button8";
+            button8.Size = new Size(204, 59);
+            button8.TabIndex = 4;
+            button8.Text = "Add New Item Brand\r\n";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
             // button4
             // 
-            button4.Location = new Point(23, 369);
+            button4.Location = new Point(22, 452);
             button4.Name = "button4";
             button4.Size = new Size(204, 59);
             button4.TabIndex = 3;
@@ -147,7 +173,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(23, 270);
+            button3.Location = new Point(22, 364);
             button3.Name = "button3";
             button3.Size = new Size(204, 59);
             button3.TabIndex = 2;
@@ -158,17 +184,18 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(23, 174);
+            button2.Location = new Point(23, 276);
             button2.Name = "button2";
             button2.Size = new Size(204, 59);
             button2.TabIndex = 1;
             button2.Text = "Add New Error";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(23, 85);
+            button1.Location = new Point(22, 17);
             button1.Name = "button1";
             button1.Size = new Size(204, 59);
             button1.TabIndex = 0;
@@ -208,5 +235,7 @@
         private Button button3;
         private Button button2;
         private Button button1;
+        private Button button8;
+        private Button button9;
     }
 }

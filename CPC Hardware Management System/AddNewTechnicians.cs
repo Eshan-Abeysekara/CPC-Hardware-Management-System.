@@ -65,20 +65,39 @@ namespace CPC_Hardware_Management_System
         //ADD TECHNICIANS
         private void button6_Click(object sender, EventArgs e)
         {
-            SqlConnection con =  new SqlConnection(ConnectionString);
+            SqlConnection con = new SqlConnection(ConnectionString);
 
             string emfno = txtemfno.Text;
             string name = txttechnicianname.Text;
 
             con.Open();
-            string Query = "insert into Technicians values ('"+emfno+"','"+name+"')";
-            SqlCommand cmd = new SqlCommand(Query,con);
+            string Query = "insert into Technicians values ('" + emfno + "','" + name + "')";
+            SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
             con.Close();
 
             MessageBox.Show("Technician Adding Success....");
 
             Clear();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            AddNewItemBrand addnewitembrand = new AddNewItemBrand();
+            addnewitembrand.Show();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AddNewItemModel addnewitemmodel = new AddNewItemModel();
+            addnewitemmodel.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
