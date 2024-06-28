@@ -102,7 +102,6 @@
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.None;
             button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
             button1.Location = new Point(130, 97);
             button1.Name = "button1";

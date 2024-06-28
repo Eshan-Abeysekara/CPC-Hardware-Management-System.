@@ -48,6 +48,7 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.Transparent;
             panel1.Controls.Add(button7);
             panel1.Controls.Add(button6);
@@ -64,9 +65,10 @@
             // 
             // button7
             // 
+            button7.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button7.BackColor = Color.White;
             button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button7.Location = new Point(735, 402);
+            button7.Location = new Point(676, 323);
             button7.Name = "button7";
             button7.Size = new Size(81, 34);
             button7.TabIndex = 10;
@@ -76,9 +78,10 @@
             // 
             // button6
             // 
+            button6.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button6.BackColor = Color.White;
             button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.Location = new Point(608, 402);
+            button6.Location = new Point(535, 323);
             button6.Name = "button6";
             button6.Size = new Size(83, 34);
             button6.TabIndex = 9;
@@ -88,6 +91,7 @@
             // 
             // txterror
             // 
+            txterror.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             txterror.Location = new Point(480, 229);
             txterror.Name = "txterror";
             txterror.Size = new Size(336, 23);
@@ -95,6 +99,7 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Left;
             label3.AutoSize = true;
             label3.BackColor = Color.White;
             label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -106,6 +111,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(502, 52);
@@ -116,6 +122,7 @@
             // 
             // button5
             // 
+            button5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.Location = new Point(882, 3);
             button5.Name = "button5";
@@ -127,6 +134,7 @@
             // 
             // panel2
             // 
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(button9);
             panel2.Controls.Add(button8);
@@ -141,6 +149,7 @@
             // 
             // button9
             // 
+            button9.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button9.Location = new Point(22, 189);
             button9.Name = "button9";
@@ -152,6 +161,7 @@
             // 
             // button8
             // 
+            button8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             button8.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button8.Location = new Point(22, 104);
             button8.Name = "button8";
@@ -163,6 +173,7 @@
             // 
             // button4
             // 
+            button4.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button4.Location = new Point(22, 452);
             button4.Name = "button4";
             button4.Size = new Size(204, 59);
@@ -173,6 +184,7 @@
             // 
             // button3
             // 
+            button3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button3.Location = new Point(22, 364);
             button3.Name = "button3";
             button3.Size = new Size(204, 59);
@@ -183,6 +195,7 @@
             // 
             // button2
             // 
+            button2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.Location = new Point(23, 276);
             button2.Name = "button2";
@@ -194,6 +207,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.Location = new Point(22, 17);
             button1.Name = "button1";
